@@ -899,7 +899,7 @@
             dot.addEventListener('click', () => {
                 if (section === 'home') {
                     navigateHome();
-                    const isSmallScreen = window.innerWidth < 420;
+                    const isSmallScreen = window.innerWidth < 400;
                     const menuWrapper = document.querySelector('.menu-rows-wrapper');
 
                     setTimeout(() => {
@@ -959,7 +959,7 @@
         const scrollThreshold = 100; // Hide menu after 100px of scrolling
 
         // Check if we're in small screen mode
-        const isSmallScreen = window.innerWidth < 420;
+        const isSmallScreen = window.innerWidth < 400;
         const menuWrapper = document.querySelector('.menu-rows-wrapper');
 
         // Hide menu wrapper when scrolling past threshold (for small screens)

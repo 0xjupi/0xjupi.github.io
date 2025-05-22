@@ -110,6 +110,7 @@
             .profile-container {
                 width: 70%;
                 margin-right: 50px;
+                margin-bottom: 180px;
             }
 
             .menu-label {
@@ -757,6 +758,7 @@
         currentPage = 'home';
         updateActiveDot('home');
         isTransitioning = false;
+        createMenuItems();
     }
 
     function createMenuItems() {
@@ -899,17 +901,17 @@
             dot.addEventListener('click', () => {
                 if (section === 'home') {
                     navigateHome();
-                    const isSmallScreen = window.innerWidth < 400;
-                    const menuWrapper = document.querySelector('.menu-rows-wrapper');
-
-                    setTimeout(() => {
-                        if (isSmallScreen) {
-                            console.log(menuWrapper);
-                            menuWrapper.style.display = 'flex';
-                        } else {
-                            menuWrapper.style.display = 'none';
-                        }
-                    }, 500);
+                    // const isSmallScreen = window.innerWidth < 400;
+                    // const menuWrapper = document.querySelector('.menu-rows-wrapper');
+                    //
+                    // setTimeout(() => {
+                    //     if (isSmallScreen) {
+                    //         console.log(menuWrapper);
+                    //         menuWrapper.style.display = 'flex';
+                    //     } else {
+                    //         menuWrapper.style.display = 'none';
+                    //     }
+                    // }, 500);
                 } else {
                     navigateTo(section);
                 }
@@ -979,6 +981,8 @@
             // Show profile
             profileContainer.style.opacity = '1';
             profileContainer.style.transform = 'scale(1)';
+
+            createMenuItems();
 
             // Move menu items back to their original positions
             const menuElements = document.querySelectorAll('.menu-item');

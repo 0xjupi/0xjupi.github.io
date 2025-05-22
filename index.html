@@ -106,7 +106,7 @@
             transition: opacity 1s, transform 1s;
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 400px) {
             .profile-container {
                 width: 70%;
                 margin-right: 50px;
@@ -764,7 +764,7 @@
         menuContainer.innerHTML = "";
 
         // Check screen width to determine layout
-        const isSmallScreen = window.innerWidth < 380;
+        const isSmallScreen = window.innerWidth < 400;
 
         if (isSmallScreen) {
             // Small screen: Create two rows with 3 items each
@@ -782,8 +782,8 @@
         // Add window resize listener to update layout when screen size changes
         window.addEventListener('resize', debounce(() => {
             // Only recreate if the threshold is crossed
-            if ((window.innerWidth < 420 && !document.querySelector('.menu-row')) ||
-                (window.innerWidth >= 420 && document.querySelector('.menu-row'))) {
+            if ((window.innerWidth < 400 && !document.querySelector('.menu-row')) ||
+                (window.innerWidth >= 400 && document.querySelector('.menu-row'))) {
                 createMenuItems();
             }
         }, 250));

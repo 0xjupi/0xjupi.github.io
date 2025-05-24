@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/ico.png" type="image/png">
     <title>Wagaye T. Kussa's Portfolio</title>
-    <!-- Add Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Base styling */
@@ -295,7 +295,7 @@
         /* Content pages */
         .content-page {
             width: 100%;
-            max-width: 52rem; /* Increased from 42rem */
+            max-width: 52rem;
             margin: 0 auto;
             padding: 2rem;
             min-height: 100vh;
@@ -314,7 +314,7 @@
         }
 
         .content-title {
-            font-size: 2.25rem; /* Increased from 1.875rem */
+            font-size: 2.25rem;
             font-weight: bold;
             margin-bottom: 2rem;
             position: relative;
@@ -334,7 +334,7 @@
 
         .content-card {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 2rem; /* Increased from 1.5rem */
+            padding: 2rem;
             border-radius: 0.75rem;
             margin-bottom: 2rem;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -359,14 +359,15 @@
         }
 
         .card-title {
-            font-size: 1.5rem; /* Increased from 1.25rem */
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
 
         .card-subtitle {
-            color: rgb(209, 213, 219);
-            font-size: 1.125rem; /* Increased size */
+            color: #5696d1;
+            /*color: rgb(209, 213, 219);*/
+            font-size: 1.125rem;
         }
 
         .card-date {
@@ -376,7 +377,7 @@
 
         .card-text {
             margin-top: 0.75rem;
-            font-size: 1.125rem; /* Increased from base size */
+            font-size: 1.125rem;
             line-height: 1.6;
         }
 
@@ -388,7 +389,7 @@
 
         .cards-grid {
             display: grid;
-            gap: 2rem; /* Increased from 1.5rem */
+            gap: 2rem;
         }
 
         @media (min-width: 768px) {
@@ -398,7 +399,7 @@
         }
 
         .card-icon {
-            font-size: 2.25rem; /* Increased from 1.875rem */
+            font-size: 2.25rem;
             margin-right: 1.5rem;
             color: rgba(124, 58, 237, 0.9);
         }
@@ -448,6 +449,23 @@
             opacity: 0.7;
             animation: bounce 2s infinite;
         }
+
+        .see-details-btn {
+            margin-top: 1rem;
+            background: rgba(124, 58, 237, 0.8);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background 0.3s ease;
+        }
+
+        .see-details-btn:hover {
+            background: rgba(124, 58, 237, 1);
+        }
+
 
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
@@ -502,40 +520,47 @@
         <section id="educationPage" class="content-page">
             <h2 class="content-title">Education</h2>
             <div class="content-card">
-                <h3 class="card-title">Master of Computer Science</h3>
-                <p class="card-subtitle">Stanford University</p>
-                <p class="card-date">2020 - 2022</p>
-                <p class="card-text">Focused on AI and Machine Learning. Graduated with honors. Participated in
-                    cutting-edge research projects working with professors at the forefront of artificial
-                    intelligence.</p>
+                <h3 class="card-title">Bachelor of Technology in Computer Engineering - Artificial Intelligence</h3>
+                <p class="card-subtitle">Marwadi University: India</p>
+                <p class="card-date">2019 - 2023</p>
+                <p class="card-text">Focused on AI and Machine Learning. Graduated in First Class. Published a research
+                    paper on brain tumor segmentation as a graduation paper and worked in the university's robotics
+                    laboratory as an student assistant.</p>
             </div>
             <div class="content-card">
-                <h3 class="card-title">Bachelor of Science in Computer Science</h3>
-                <p class="card-subtitle">MIT</p>
-                <p class="card-date">2016 - 2020</p>
-                <p class="card-text">Minor in Mathematics. Dean's List all semesters. Participated in competitive
-                    programming competitions and led the campus web development club that created applications for
-                    student life.</p>
+                <h3 class="card-title">Online Course Certificates</h3>
+                <p class="card-subtitle">University of Michigan, Johns Hopkins University and Google Analytics Academy:
+                    USA</p>
+                <p class="card-date">2020 - 2022</p>
+                <p class="card-text">Took short and long term courses: Applied Machine Learning in Python, Python
+                    Basics, "HTML, CSS, & Javascript for Web Developers", and Google Analytics.</p>
             </div>
         </section>
 
         <section id="experiencePage" class="content-page">
             <h2 class="content-title">Work Experience</h2>
             <div class="content-card">
-                <h3 class="card-title">Senior Frontend Developer</h3>
-                <p class="card-subtitle">Google</p>
-                <p class="card-date">2022 - Present</p>
-                <p class="card-text">Leading UI/UX development for next-generation web applications. Created responsive
-                    interfaces used by millions of users daily. Implemented cutting-edge animations and interactions
-                    that improved user engagement metrics by 30%.</p>
+                <h3 class="card-title">Graphics Designer</h3>
+                <p class="card-subtitle">Koket Technologies, Beyond Travel Agency, and Kush City Bus: Ethiopia</p>
+                <p class="card-date">2018 - 2020</p>
+                <p class="card-text"> Designed logo and branding packages, promotional materials, and product packaging.
+                    Used Adobe Photoshop, and Illustrator, to create images and layouts. Designed a logo for a public
+                    city bus.</p>
             </div>
             <div class="content-card">
-                <h3 class="card-title">Software Engineer</h3>
-                <p class="card-subtitle">Microsoft</p>
+                <h3 class="card-title">Robotics Club Assistant</h3>
+                <p class="card-subtitle">Marwadi University: India</p>
                 <p class="card-date">2020 - 2022</p>
-                <p class="card-text">Worked on React-based applications with focus on accessibility. Collaborated with
-                    cross-functional teams to develop user-centered interfaces. Conducted usability tests and
-                    implemented improvements based on user feedback.</p>
+                <p class="card-text">Worked in a robotics club as assistant developing different IOT and Data Science
+                    programming projects, participated in circuit design and electronics projects, and worked as 3D
+                    model sculpture and experienced 3D printing to the extent.</p>
+            </div>
+            <div class="content-card">
+                <h3 class="card-title">Assistant Chef</h3>
+                <p class="card-subtitle">Mall Moll Restaurant, and Karamelli Brunch Cafe: Malta, Gozo</p>
+                <p class="card-date">2023 - 2024</p>
+                <p class="card-text">Worked in kitchen as an assistant chef. Learned new skill cooking Italian cuisine
+                    and preparing different types of deserts.</p>
             </div>
         </section>
 
@@ -543,41 +568,212 @@
             <h2 class="content-title">Projects</h2>
             <div class="cards-grid">
                 <div class="content-card">
-                    <h3 class="card-title">Smart Mirror UI</h3>
-                    <p class="card-text">An interactive smart mirror interface with health tracking. Features voice
-                        commands, personalized weather forecasts, and calendar integration with elegant animations.</p>
-                    <div class="card-tags"><i class="fab fa-react"></i> React • <i class="fas fa-cube"></i> Three.js •
-                        WebGL
+                    <h3 class="card-title">Contactless Solar Panel Cleaning Robot</h3>
+                    <p class="card-text">This project was granted 200,000 Indian Rupees fund from SSIP Marwadi
+                        University as a startup kick-start...</p>
+                    <div class="card-tags">
+                        <i class="fas fa-code"></i> C++ •
+                        <i class="fas fa-robot"></i> Robotics •
+                        <i class="fas fa-solar-panel"></i> Clean Energy
                     </div>
+                    <button class="see-details-btn" onclick="navigateTo('robotDetail')">
+                        <i class="fas fa-arrow-right"></i> See Details
+                    </button>
                 </div>
                 <div class="content-card">
-                    <h3 class="card-title">Portfolio Generator</h3>
-                    <p class="card-text">AI-powered portfolio website generator with custom animations. The tool
-                        analyzes user input to create personalized portfolios with optimized UI/UX based on industry
-                        best practices.</p>
-                    <div class="card-tags"><i class="fab fa-react"></i> React • <i class="fab fa-css3"></i> TailwindCSS
+                    <h3 class="card-title">Brain Tumor Segmentation using 3D U-Net CNN</h3>
+                    <p class="card-text">Trained a deep-learning model that segments high-grade gliomas into different
+                        tumor classes.</p>
+                    <p class="card-text">Wrote a research paper on it, and it is published on wiley online library with
+                        the title "3D
+                        U‐Net‐Based Brain Tumor Semantic Segmentation Using a Modified Data Generator".</p>
+                    <p class="card-text">Details below in research papers section.</p>
+                    <div class="card-tags"><i class="fab fa-python"></i> Python • <i class="fas fa-microscope"></i>
+                        Research
                         • <i class="fas fa-brain"></i> AI
                     </div>
                 </div>
                 <div class="content-card">
-                    <h3 class="card-title">Quantum Computing Visualizer</h3>
-                    <p class="card-text">Interactive visualization of quantum computing concepts. Makes complex quantum
-                        principles accessible through intuitive visual representations and interactive simulations.</p>
-                    <div class="card-tags"><i class="fas fa-chart-line"></i> D3.js • WebGL • <i
-                            class="fab fa-react"></i> React
+                    <h3 class="card-title">XOXO Telegram Dating Bot</h3>
+                    <p class="card-text">
+                        A Telegram-based dating bot that connects people based on location, intent, and
+                        personality.
+                    </p>
+                    <p class="card-text">
+                        Users can anonymously chat, and match based on interest. The bot includes chat moderation, new
+                        users referral incentive that allows users to earn xoxo coins and redeem it for free likes, user
+                        blocking, and a boost feature for
+                        visibility.
+                    </p>
+                    <div class="card-tags">
+                        <i class="fab fa-telegram"></i> XOXO Telegram Dating Bot •
+                        <i class="fas fa-heart"></i> Matchmaking •
+                        <i class="fas fa-shield-alt"></i> Anonymity
                     </div>
+                    <button class="see-details-btn" onclick="navigateTo('xoxoDetail')">
+                        <i class="fas fa-arrow-right"></i> See Details
+                    </button>
                 </div>
+
                 <div class="content-card">
-                    <h3 class="card-title">Neural Network Playground</h3>
-                    <p class="card-text">Educational tool for exploring neural networks visually. Users can create and
-                        train custom networks, visualize the learning process, and understand how AI works under the
-                        hood.</p>
-                    <div class="card-tags"><i class="fas fa-brain"></i> TensorFlow.js • <i class="fab fa-react"></i>
-                        React • SVG
+                    <h3 class="card-title">iGebeya Buy & Sell Telegram Mini App</h3>
+                    <p class="card-text">
+                        iGebeya is a Telegram Mini App marketplace for listing new and used items in Ethiopia. Users can
+                        post items, manage listings, verify identity, and boost their ads for visibility. The platform
+                        also supports reselling and earning via a trusted reseller agreement.
+                    </p>
+                    <div class="card-tags">
+                        <i class="fab fa-telegram-plane"></i> Telegram Mini App •
+                        <i class="fas fa-store"></i> Marketplace •
+                        <i class="fas fa-bolt"></i> Boost System
                     </div>
+                    <button class="see-details-btn" onclick="navigateTo('igebeyaDetail')">
+                        <i class="fas fa-arrow-right"></i> See Details
+                    </button>
                 </div>
+
             </div>
         </section>
+
+        <section id="robotDetailPage" class="content-page">
+            <h2 class="content-title">Solar Panel Cleaning Robot – Details</h2>
+            <div class="content-card">
+                <h3 class="card-title">Background & Impact</h3>
+                <p class="card-text">
+                    The robot removes dust accumulation without physical contact, preventing micro-scratches and
+                    improving solar efficiency by up to 30%. It operates autonomously across solar rows.
+                </p>
+                <p class="card-text">
+                    This project received a ₹200,000 startup fund from SSIP (India) and won ₹100,000 in Intellify
+                    Hackathon 2023. It was awarded a patent in July 2023.
+                </p>
+                <p class="card-text">
+                    The photos and videos below are only from development stage. The production level product images and
+                    videos can't be shared here because of patent.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="card-title">Gallery & Media</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <img src="/solar1.png" alt="Certificate" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/solar2.png" alt="Robot Demo" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/solar3.png" alt="Robot Demo" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/solar5.png" alt="Robot Demo" style="max-width: 45%; border-radius: 8px;">
+                    <video controls style="width: 93%; border-radius: 8px; margin-top: 1rem;">
+                        <source src="/solar4.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="navigateTo('projects')">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </button>
+        </section>
+
+        <section id="xoxoDetailPage" class="content-page">
+            <h2 class="content-title">XOXO Telegram Dating Bot – Details</h2>
+
+            <div class="content-card">
+                <h3 class="card-title">Overview</h3>
+                <p class="card-text">
+                    XOXO is a Telegram Mini App and bot built to connect singles through a privacy-focused,
+                    personality-aware algorithm. It uses AI for intent classification, face verification via image
+                    comparison, and recommendation logic to match compatible users based on language, interests, and
+                    region.
+                </p>
+                <p class="card-text">
+                    It features a boost system (paid or xoxo coin) to gain visibility, anonymous matching, safety
+                    protocols (report/block), and daily limits to encourage healthy use.
+                </p>
+                <p class="card-text">
+                    The bot allows users to share pics about anything in their stories, and users can watch stories of
+                    others, like or private message based on the limit of likes and messages they have.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="card-title">Gallery & Demo</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <img src="/xoxo1.jpg" alt="XOXO Chat UI" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/xoxo2.jpg" alt="Match UI" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/xoxo3.jpg" alt="XOXO Chat UI" style="max-width: 45%; border-radius: 8px;">
+                    <img src="/xoxo4.jpg" alt="Match UI" style="max-width: 45%; border-radius: 8px;">
+                    <video controls style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+                        <source src="/xoxo5.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="navigateTo('projects')">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </button>
+        </section>
+
+        <section id="igebeyaDetailPage" class="content-page">
+            <h2 class="content-title">iGebeya Buy & Sell – Details</h2>
+
+            <div class="content-card">
+                <h3 class="card-title">Overview</h3>
+                <p class="card-text">
+                    iGebeya is a local-first, low-bandwidth-friendly Telegram Mini App designed to simplify digital
+                    classifieds in Ethiopia. Users can list items for sale, add images, and categorize them with tags.
+                    Listings can be promoted using boost tokens or rewarded ad views.
+                </p>
+                <p class="card-text">
+                    It includes secure identity verification (powered by 101-Verify which is my undergoing KYC project), a reseller system with payout logic, and Telegram-native
+                    interactions for seamless in-app communication. The backend is built with FastAPI and MySQL, and the
+                    UI is optimized for Telegram WebView UX.
+                </p>
+                <p class="card-text">
+                    The mini app gathers users interaction data through time and uses it to recommend related items.
+                    The platform is 100% free where users can earn free boosts by turning ads on, checking in daily, and
+                    completing other tasks.
+                    These boosts can be used to boost listed items.
+                </p>
+                <p class="card-text">
+                    When users want to buy more boosts they can simply pay using telegram integrated crypto wallets. The
+                    crypto transaction is handled in a secure encrypted way on "TON Blockchain" and doesn't expose any users' data.
+                </p>
+                <p class="card-text">
+                    Admins can monitor users' interactions, items, profile verification approval and etc on another telegram mini app dedicated only for admins.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="card-title">Gallery & Demo</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <img src="/igebeya2.PNG" alt="iGebeya Item Listing UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya3.PNG" alt="User Dashboard UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya4.PNG" alt="iGebeya Item Listing UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya5.PNG" alt="User Dashboard UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya6.PNG" alt="iGebeya Item Listing UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya7.PNG" alt="User Dashboard UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya8.PNG" alt="iGebeya Item Listing UI"
+                         style="max-width: 45%; border-radius: 8px;">
+                    <img src="/igebeya9.PNG" alt="User Dashboard UI"
+                         style="max-width: 45%; border-radius: 8px;">
+
+                    <video controls style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+                        <source src="/igebeya1.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="navigateTo('projects')">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </button>
+        </section>
+
 
         <section id="researchPage" class="content-page">
             <h2 class="content-title">Research Papers</h2>
@@ -959,7 +1155,7 @@
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
 
-        const scrollThreshold = 100; // Hide menu after 100px of scrolling
+        const scrollThreshold = 25; // Hide menu after 100px of scrolling
 
         // Check if we're in small screen mode
         const isSmallScreen = window.innerWidth < 400;

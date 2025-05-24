@@ -592,6 +592,9 @@
                         Research
                         • <i class="fas fa-brain"></i> AI
                     </div>
+                    <button class="see-details-btn" onclick="openURL('https://onlinelibrary.wiley.com/doi/10.1002/ima.70056')">
+                        <i class="fas fa-arrow-right"></i> See Details
+                    </button>
                 </div>
                 <div class="content-card">
                     <h3 class="card-title">XOXO Telegram Dating Bot</h3>
@@ -908,6 +911,10 @@
         // If icon is on right side (angles 0-180), it goes to top (12 o'clock)
         const hideAngle = angle > 180 ? 270 : 90;
         return getCirclePosition(hideAngle, 400); // Larger radius to move out of view
+    }
+
+    function openURL(url) {
+        window.location.href = url;
     }
 
     // Navigate to a specific page

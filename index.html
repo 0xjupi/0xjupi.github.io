@@ -569,35 +569,42 @@
             <div class="cards-grid">
                 <div class="content-card">
                     <h3 class="card-title">Contactless Solar Panel Cleaning Robot</h3>
-                    <p class="card-text">This project was granted 200,000 Indian Rupees fund from SSIP Marwadi
-                        University as a startup kick-start...</p>
                     <div class="card-tags">
                         <i class="fas fa-code"></i> C++ •
                         <i class="fas fa-robot"></i> Robotics •
                         <i class="fas fa-solar-panel"></i> Clean Energy
                     </div>
+                    <p class="card-text">This project was granted 200,000 Indian Rupees fund from SSIP Marwadi
+                        University as a startup kick-start...</p>
+
                     <button class="see-details-btn" onclick="navigateTo('robotDetail')">
                         <i class="fas fa-arrow-right"></i> See Details
                     </button>
                 </div>
                 <div class="content-card">
                     <h3 class="card-title">Brain Tumor Segmentation using 3D U-Net CNN</h3>
+                    <div class="card-tags"><i class="fab fa-python"></i> Python • <i class="fas fa-microscope"></i>
+                        Research
+                        • <i class="fas fa-brain"></i> AI
+                    </div>
                     <p class="card-text">Trained a deep-learning model that segments high-grade gliomas into different
                         tumor classes.</p>
                     <p class="card-text">Wrote a research paper on it, and it is published on wiley online library with
                         the title "3D
                         U‐Net‐Based Brain Tumor Semantic Segmentation Using a Modified Data Generator".</p>
                     <p class="card-text">Details below in research papers section.</p>
-                    <div class="card-tags"><i class="fab fa-python"></i> Python • <i class="fas fa-microscope"></i>
-                        Research
-                        • <i class="fas fa-brain"></i> AI
-                    </div>
+
                     <button class="see-details-btn" onclick="openURL('https://onlinelibrary.wiley.com/doi/10.1002/ima.70056')">
                         <i class="fas fa-arrow-right"></i> See Details
                     </button>
                 </div>
                 <div class="content-card">
                     <h3 class="card-title">XOXO Telegram Dating Bot</h3>
+                    <div class="card-tags">
+                        <i class="fab fa-telegram"></i> XOXO Telegram Dating Bot •
+                        <i class="fas fa-heart"></i> Matchmaking •
+                        <i class="fas fa-shield-alt"></i> Anonymity
+                    </div>
                     <p class="card-text">
                         A Telegram-based dating bot that connects people based on location, intent, and
                         personality.
@@ -608,11 +615,7 @@
                         blocking, and a boost feature for
                         visibility.
                     </p>
-                    <div class="card-tags">
-                        <i class="fab fa-telegram"></i> XOXO Telegram Dating Bot •
-                        <i class="fas fa-heart"></i> Matchmaking •
-                        <i class="fas fa-shield-alt"></i> Anonymity
-                    </div>
+
                     <button class="see-details-btn" onclick="navigateTo('xoxoDetail')">
                         <i class="fas fa-arrow-right"></i> See Details
                     </button>
@@ -620,16 +623,17 @@
 
                 <div class="content-card">
                     <h3 class="card-title">iGebeya Buy & Sell Telegram Mini App</h3>
-                    <p class="card-text">
-                        iGebeya is a Telegram Mini App marketplace for listing new and used items in Ethiopia. Users can
-                        post items, manage listings, verify identity, and boost their ads for visibility. The platform
-                        also supports reselling and earning via a trusted reseller agreement.
-                    </p>
                     <div class="card-tags">
                         <i class="fab fa-telegram-plane"></i> Telegram Mini App •
                         <i class="fas fa-store"></i> Marketplace •
                         <i class="fas fa-bolt"></i> Boost System
                     </div>
+                    <p class="card-text">
+                        iGebeya is a Telegram Mini App marketplace for listing new and used items in Ethiopia. Users can
+                        post items, manage listings, verify identity, and boost their ads for visibility. The platform
+                        also supports reselling and earning via a trusted reseller agreement.
+                    </p>
+
                     <button class="see-details-btn" onclick="navigateTo('igebeyaDetail')">
                         <i class="fas fa-arrow-right"></i> See Details
                     </button>
@@ -914,7 +918,7 @@
     }
 
     function openURL(url) {
-        window.location.href = url;
+        window.open(url, "_blank");
     }
 
     // Navigate to a specific page

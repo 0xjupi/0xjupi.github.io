@@ -118,9 +118,9 @@
                 display: none;
             }
 
-            .menu-container {
-                display: none;
-            }
+            /*.menu-container {*/
+            /*    display: none;*/
+            /*}*/
 
             header {
                 margin-left: 20px;
@@ -536,9 +536,9 @@
 
             <!-- Menu items will be added here by JavaScript -->
             <div id="menuContainer" class="menu-container"></div>
-            <div class="typing-box" id="typingBox">
-                <!-- Typed text will appear here -->
-            </div>
+<!--            <div class="typing-box" id="typingBox">-->
+<!--                &lt;!&ndash; Typed text will appear here &ndash;&gt;-->
+<!--            </div>-->
 
             <!-- Scroll indicator -->
             <div class="scroll-indicator">
@@ -973,29 +973,29 @@
 </div>
 
 <script>
-    const infoText = `
-        Name: Wagaye T. Kussa
-        Age: 27
-        Date of Birth: 24 March 1998
-        Address: Friedberg(Hessen), Germany
-        Language: German (A2–B1), English (Fluent), Amharic (M.Tongue)
-        Education: B.Tech in CE-AI
-            `;
-
-    const typingBox = document.getElementById('typingBox');
-    let index = 0;
-
-    function typeNextChar() {
-        if (index < infoText.length) {
-            typingBox.innerHTML = infoText.slice(0, index + 1) + '<span class="blinking-cursor"></span>';
-            index++;
-            setTimeout(typeNextChar, 30); // Typing speed (ms)
-        } else {
-            typingBox.innerHTML = infoText; // Remove cursor at the end
-        }
-    }
-
-    typeNextChar();
+    // const infoText = `
+    //     Name: Wagaye T. Kussa
+    //     Age: 27
+    //     Date of Birth: 24 March 1998
+    //     Address: Friedberg(Hessen), Germany
+    //     Language: German (A2–B1), English (Fluent), Amharic (M.Tongue)
+    //     Education: B.Tech in CE-AI
+    //         `;
+    //
+    // const typingBox = document.getElementById('typingBox');
+    // let index = 0;
+    //
+    // function typeNextChar() {
+    //     if (index < infoText.length) {
+    //         typingBox.innerHTML = infoText.slice(0, index + 1) + '<span class="blinking-cursor"></span>';
+    //         index++;
+    //         setTimeout(typeNextChar, 30); // Typing speed (ms)
+    //     } else {
+    //         typingBox.innerHTML = infoText; // Remove cursor at the end
+    //     }
+    // }
+    //
+    // typeNextChar();
 
     // Menu item configuration
     const menuItems = [
